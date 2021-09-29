@@ -1,0 +1,29 @@
+.bibliography__nav {
+  padding: 1em;
+}
+.bibliography__nav a {
+  font-family: var(--ff, "Roboto");
+  color: var(--fc-color, black);
+  text-decoration: none;
+}
+.bibliography-wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 1em;
+  gap: 2em;
+}
+.bibliography__h1,
+.bibliography__p {
+  font-family: var(--ff, "Roboto"), sans-serif;
+}
+
+.bibliography__h1 {
+  --ff: "Montserrat";
+  text-align: center;
+}
+
+.bibliography__p {
+  max-width: 60ch;
+  margin-bottom: 1em;
+}

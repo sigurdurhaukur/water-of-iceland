@@ -1,0 +1,13 @@
+{
+  "fish": "Hello, does this work?",
+  "geothermal": "Hello, does this work?",
+  "glacier": "Hello, does this work?",
+  "sports": {
+    "sailing": "",
+    "swimming": "",
+    "skiing": ""
+  },
+  "food": "Hello, does this work?",
+  "drink": "Hello, does this work?",
+  "cleaning": "Hello, does this work?"
+}

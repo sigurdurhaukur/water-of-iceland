@@ -1,0 +1,253 @@
+:root {
+  --fc-100: white;
+  --fc-90: rgb(230, 230, 230);
+  --bg-color: #072f3f;
+  --bg-light: #18789e;
+  --bg-gradient-1: linear-gradient(
+    90deg,
+    rgba(7, 47, 63, 1) 0%,
+    rgba(7, 47, 63, 1) 100%
+  );
+  --color2: yellow;
+  --color3: blue;
+}
+
+body {
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+}
+
+.top {
+  background-image: url("./photos/jeremy-bishop-1braZySlEKA-unsplash.jpg");
+  background-position: center;
+}
+
+.top h1 {
+  padding-top: 2em;
+  max-width: 8ch;
+}
+.geothermal h1 {
+  padding-top: 1em;
+}
+.subtitle {
+  color: var(--fc-90);
+  margin-left: 10vw;
+}
+.top .subtitle {
+  margin-top: 1em;
+}
+img {
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10vw;
+  line-height: 1;
+
+  color: var(--fc-100);
+  margin-left: 1em;
+}
+h2 {
+  font-size: 3vw;
+  color: var(--fc-100);
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.125em;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  max-width: 60ch;
+  color: var(--fc-90);
+}
+
+.particle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #97b1aa;
+  position: absolute;
+  /* bottom: -10px; */
+  opacity: 0;
+}
+
+section {
+  height: 100vh;
+}
+
+.fish::before {
+  content: "";
+  display: block;
+  height: 20vh;
+  background: linear-gradient(180deg, rgb(6 65 78) 0%, rgba(7, 47, 63, 1) 100%);
+}
+
+.fish {
+  height: 90vh;
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+}
+.fish p {
+  opacity: 0;
+}
+.fish .subtitle {
+  margin-bottom: 1em;
+}
+.fish img {
+  position: relative;
+  left: 100vw;
+  z-index: 1;
+  animation: swim 10000ms infinite;
+  fill: url("https://previews.123rf.com/images/bejim/bejim1401/bejim140100190/24953081-texture-of-fish-scale-close-up-shot-for-background.jpg");
+}
+@keyframes swim {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    left: 100vw;
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    left: -100vw;
+  }
+  51% {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  100% {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    left: 100vw;
+  }
+}
+.fish p,
+.geothermal p,
+.glacier p,
+.food p,
+.drink p,
+.cleaning p {
+  margin-top: 2em;
+  margin-left: 10vw;
+  max-width: 40ch;
+  /* opacity: 0; */
+}
+
+.geothermal {
+  background: linear-gradient(var(--bg-color), #3f0707);
+  animation: gradient 1s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.glacier::before {
+  content: "";
+  display: block;
+  height: 10vh;
+  background: linear-gradient(#3f0707, var(--bg-light));
+}
+
+.glacier {
+  height: 90vh;
+  background-color: var(--bg-light);
+}
+
+.glacier h1 {
+  z-index: 10;
+  position: relative;
+}
+.glacier p {
+  z-index: 10;
+  position: relative;
+  max-width: 40ch;
+}
+.glacier img {
+  height: 50vh;
+  width: 30vw;
+  position: relative;
+  bottom: 10vh;
+  left: 60vw;
+}
+
+.sport {
+  overflow-x: hidden;
+  padding-top: 4em;
+  background-color: var(--bg-light);
+}
+
+.content_container {
+  margin-left: 10vw;
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.content {
+  padding: 2em;
+  display: flex;
+  gap: 5em;
+  min-width: 100vw;
+}
+
+.content div {
+  max-width: 50ch;
+}
+.content p {
+  max-width: 40vw;
+}
+.content img {
+  height: 40vh;
+  width: 30vw;
+}
+
+.food::before {
+  content: "";
+  display: block;
+  height: 10vh;
+  background: linear-gradient(var(--bg-light), var(--bg-color));
+}
+.food {
+  height: 90vh;
+}
+
+.drink img {
+  position: relative;
+  bottom: 40vh;
+  left: 66vw;
+  transform: rotate(10deg);
+  height: 800px;
+  width: 200px;
+}
+
+.cleaning img {
+  height: 35vh;
+  width: 35vw;
+  position: relative;
+  bottom: 10vh;
+  left: 55vw;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  color: var(--fc-100);
+  font-size: 3vw;
+  text-align: center;
+  padding: 1em;
+}
+
+footer a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: var(--fc-90);
+  font-weight: 300;
+}
