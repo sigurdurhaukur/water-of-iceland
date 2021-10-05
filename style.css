@@ -128,7 +128,8 @@ section {
 .glacier p,
 .food p,
 .drink p,
-.cleaning p {
+.cleaning p,
+.rivers p {
   margin-top: 2em;
   margin-left: 10vw;
   max-width: 40ch;
@@ -210,6 +211,18 @@ section {
   width: 30vw;
 }
 
+.rivers {
+  min-height: 120vh;
+  background-color: var(--bg-light);
+  padding: 2em 0;
+}
+.rivers img {
+  height: 45vh;
+  width: 35vw;
+  position: relative;
+  bottom: 60vh;
+  left: 55vw;
+}
 .food::before {
   content: "";
   display: block;
@@ -233,11 +246,14 @@ section {
   height: 35vh;
   width: 35vw;
   position: relative;
-  bottom: 10vh;
-  left: 55vw;
+  bottom: 30vh;
+  left: 60vw;
 }
 
 footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 30vh;
   font-family: "Montserrat", sans-serif;
   color: var(--fc-100);
   font-size: 3vw;

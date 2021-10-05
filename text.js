@@ -1,7 +1,7 @@
-fetch("text.json")
-  .then((response) => response.json())
-  .then((jsonData) => assignText(jsonData))
-  .catch((error) => console.log(error));
+// fetch("text.json")
+//   .then((response) => response.json())
+//   .then((jsonData) => assignText(jsonData))
+//   .catch((error) => console.log(error));
 
 function assignText(data) {
   let fish = document.querySelector(".fish #text");
@@ -11,12 +11,14 @@ function assignText(data) {
   let sailing = document.querySelector(".sailing #text");
   let skiing = document.querySelector(".skiing #text");
   let food = document.querySelector(".food #text");
+  let rivers = document.querySelector(".rivers #text");
   let drink = document.querySelector(".drink #text");
   let cleaning = document.querySelector(".cleaning #text");
 
   fish.innerHTML = data.fish;
   geothermal.innerHTML = data.geothermal;
   glacier.innerHTML = data.glacier;
+  rivers.innerHTML = data.rivers;
   swimming.innerHTML = data.sports.swimming;
   sailing.innerHTML = data.sports.sailing;
   skiing.innerHTML = data.sports.skiing;

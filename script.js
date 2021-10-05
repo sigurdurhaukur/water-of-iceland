@@ -115,6 +115,29 @@ tl.to(".content_container", {
 
   duration: 20000,
 });
+tl.to(".rivers h1", {
+  scrollTrigger: {
+    trigger: ".rivers",
+    end: "top 50vh",
+    scrub: 0.5,
+
+    toggleActions: "restart none none reverse",
+  },
+  clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+});
+
+tl.to(".rivers p", {
+  scrollTrigger: {
+    trigger: ".rivers",
+    start: "center 20vh",
+    end: "top 100vh",
+    scrub: 0.5,
+    toggleActions: "restart none none reverse",
+  },
+  y: 10,
+  opacity: 1,
+  duration: 0.1,
+});
 tl.to(".food h1", {
   scrollTrigger: {
     trigger: ".food",
